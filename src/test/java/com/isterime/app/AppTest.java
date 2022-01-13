@@ -9,12 +9,19 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void doesConstructWithoutInput()
     {
-        assertTrue( true );
+        Stack testObj = new Stack(10);
+        //testObj.Stack(10);
+        boolean passFail = true;
+        if(testObj.length() != 10)
+        {
+            passFail = false; 
+        }
+
+
+        assertTrue( passFail );
+        
     }
 }

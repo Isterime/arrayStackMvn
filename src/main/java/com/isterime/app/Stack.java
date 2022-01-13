@@ -1,6 +1,5 @@
 
 package com.isterime.app;
-
 public class Stack 
 {
 
@@ -15,7 +14,7 @@ public class Stack
     //this creates the empty array of size (initial size) 
     //this sets head to value -1
     //initialization of instance variables happens here
-        int[] stackArr = new int[initialSize];
+        stackArr = int[initialSize];
         head = -1;
     }
 
@@ -24,8 +23,8 @@ public class Stack
     {
     // Instead of making to initialsize like above it makes it to user input
     //slightly different constructor, 
-    //where the user provides the starting size of the array
-        int[] stackArr = new int[size];
+    //where the user provides the starting size of the arra
+        stackArr = int[size];
         head = -1;
     }
     
@@ -50,7 +49,7 @@ public class Stack
             }
             
             i = 0;
-            int[] stackArr = new int[doubleLength];
+            stackArr = int[doubleLength];
             
             while(i < head)
             {
@@ -112,7 +111,13 @@ public class Stack
         }
        return tempArray;
     }
-
+    
+    public int length()
+    {
+        int length = 0;
+        length = stackArr.length;
+        return length;
+    }
     public String toString()
     { // int[] tempArray = new stackArr.toArray()
         int[] tempArray = new int[head + 1];
