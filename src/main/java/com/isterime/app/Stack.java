@@ -14,7 +14,7 @@ public class Stack
     //this creates the empty array of size (initial size) 
     //this sets head to value -1
     //initialization of instance variables happens here
-        stackArr = int[initialSize];
+        stackArr = new int[initialSize];
         head = -1;
     }
 
@@ -24,7 +24,7 @@ public class Stack
     // Instead of making to initialsize like above it makes it to user input
     //slightly different constructor, 
     //where the user provides the starting size of the arra
-        stackArr = int[size];
+        stackArr = new int[size];
         head = -1;
     }
     
@@ -34,12 +34,12 @@ public class Stack
         {
             //make new array with size head+1 times 2 and populate
            
-            int[] tempArray = new int[10];
+            int[] tempArr = new int[10];
             int arrayLength = 0;
             int doubleLength = 0;
             arrayLength = stackArr.length; 
             doubleLength = arrayLength * 2;
-            int[] tempArr = new int[doubleLength];
+            tempArr = new int[doubleLength];
             int i = 0;
             
             while(i < head)
@@ -49,7 +49,7 @@ public class Stack
             }
             
             i = 0;
-            stackArr = int[doubleLength];
+            stackArr = new int[doubleLength];
             
             while(i < head)
             {
@@ -132,8 +132,15 @@ public class Stack
         System.out.println(tempArray.toString());
         return tempArray.toString();
     }
+    
+    public int getHead()
+    {
+        return this.head;
+    }
+    
     //public void printStack()
 
+    
 //LEARN HOW TO THROW EXCEPTIONS
 }
 
