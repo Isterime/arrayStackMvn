@@ -132,7 +132,7 @@ public class AppTest
         }
 
     @Test   
-     public void  popupdateshead()
+     public void  pushupdateshead()
         {
             boolean passFail = true;
             Stack testObj = new Stack(10);
@@ -173,12 +173,7 @@ public class AppTest
                     assertTrue("peek is not working or stack not made properly" + i, passFail);
                 }
             }
-           
-               
-
-
             assertTrue( passFail );
-        
         }
 
 
